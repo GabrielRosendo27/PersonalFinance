@@ -1,12 +1,10 @@
 import React from "react";
-import LoginPage from "./components/LoginPage";
+import { LoginPage } from "./components/LoginPage/LoginPage";
 
-function App() {
+export function App() {
   return (
     <>
       <LoginPage />
     </>
   );
 }
-
-export default App;
