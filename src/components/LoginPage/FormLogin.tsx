@@ -2,12 +2,16 @@ import React from "react";
 export function FormLogin() {
   return (
     <div>
-      <h2 className="text-red-800">Bem Vindo!</h2>
       <form>
-        <label>email: </label>
-        <input />
-        <label>email: </label>
-        <input />
+        <div className="flex flex-col">
+          <label htmlFor="email">email: </label>
+          <input name="email" id="email" />
+        </div>
+        <div className="flex flex-col">
+          <label>senha: </label>
+          <input />
+        </div>
+        <button className="bg-green-500">Enviar</button>
       </form>
     </div>
   );
