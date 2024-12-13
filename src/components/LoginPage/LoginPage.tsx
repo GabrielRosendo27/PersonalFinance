@@ -1,20 +1,14 @@
 import React from "react";
-import { FormLogin } from "./FormLogin";
-import { useGlobalContext } from "../../hooks/globalContext";
+import { LoginForm } from "./LoginForm";
 
 export function LoginPage() {
-  const { email, password } = useGlobalContext();
   return (
-    <div className="h-screen flex justify-center items-center bg-blue-300 gap-20">
-      <div>1</div>
+    <div className="h-screen flex justify-center items-center ">
       <div>
-        <FormLogin />
-        {email && password && (
-          <div>
-            Email ---- {email} <br />
-            senha ---- {password}
-          </div>
-        )}
+        <h1 className="text-5xl">Personal Finance</h1>
+      </div>
+      <div>
+        <LoginForm />
       </div>
     </div>
   );
