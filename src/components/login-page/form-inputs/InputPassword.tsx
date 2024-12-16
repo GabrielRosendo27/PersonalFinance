@@ -1,6 +1,10 @@
 import React from "react";
-export function InputPassword() {
-  const [localPassword, setLocalPassword] = React.useState("");
+
+interface InputPasswordProps {
+  setLocalPassword: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export function InputPassword({ setLocalPassword }: InputPasswordProps) {
   return (
     <div className="relative">
       <label htmlFor="Password">Password: </label>

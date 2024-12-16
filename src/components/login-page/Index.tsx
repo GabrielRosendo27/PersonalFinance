@@ -6,8 +6,8 @@ import { TextWelcome } from "./TextWelcome";
 export function LoginPage() {
   return (
     <>
-      <div className="container h-screen w-screen flex justify-center items-center mx-auto gap-4">
-        <div>
+      <div className="container h-screen w-screen flex justify-around items-center mx-auto ">
+        <div className="max-sm:hidden">
           <TextPersonalFinance />
         </div>
         <div className="flex flex-col gap-5">

@@ -15,14 +15,13 @@ export function Form() {
     e.preventDefault();
     setEmail(localEmail);
     setPassword(localPassword);
-    console.log("env");
   }
 
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <InputEmail />
-        <InputPassword />
+        <InputEmail setLocalEmail={setLocalEmail} />
+        <InputPassword setLocalPassword={setLocalPassword} />
         <InputCheckbox />
         <div className="flex flex-col">
           <ButtonLogIn handleSubmit={handleSubmit} />
