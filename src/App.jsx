@@ -1,5 +1,5 @@
 import React from "react";
-import { LoginPage } from "./components/LoginPage/LoginPageItems/LoginPage";
+import { LoginPage } from "./components/login-page/Index";
 import { GlobalProvider, useGlobalContext } from "./hooks/globalContext";
 
 export function App() {

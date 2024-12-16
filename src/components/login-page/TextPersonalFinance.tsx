@@ -1,6 +1,6 @@
 import React from "react";
 
-export function LoginPageText() {
+export function TextPersonalFinance() {
   return (
     <div>
       <h1 className="text-5xl">Personal Finance</h1>

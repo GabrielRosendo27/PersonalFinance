@@ -1,13 +1,13 @@
 import React from "react";
-export function LoginPasswordInput() {
+export function InputPassword() {
   const [localPassword, setLocalPassword] = React.useState("");
   return (
     <div className="relative">
-      <label htmlFor="Password">Digite sua senha: </label>
+      <label htmlFor="Password">Password: </label>
       <input
+        type="password"
         name="Password"
         id="Password"
-        placeholder="E-mail"
         onChange={({ target }) => setLocalPassword(target.value)}
         className="peer focus:outline-none border-b border-black w-full"
       />
