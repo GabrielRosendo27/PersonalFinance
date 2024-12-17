@@ -1,15 +1,9 @@
 import React from "react";
 
-interface ButtonLoginProps {
-  handleSubmit: (e: React.FormEvent) => void;
-}
-
-export function ButtonLogIn({ handleSubmit }: ButtonLoginProps) {
+export function ButtonLogIn() {
   return (
     <>
-      <button onClick={handleSubmit} className="bg-green-400 mt-2 rounded px-4 py-2 text-center hover:bg-green-600 cursor-pointer">
-        Log In
-      </button>
+      <button className="bg-green-400 rounded px-4 py-2 text-center hover:bg-green-600 cursor-pointer">Log In</button>
     </>
   );
 }
