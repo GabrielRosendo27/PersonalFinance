@@ -36,7 +36,7 @@ export function Form() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
         <InputEmail register={register} error={errors.email?.message} />
         <InputPassword register={register} error={errors.password?.message} />
         <InputCheckbox register={register} />

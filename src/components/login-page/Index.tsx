@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "./Form";
 import { TextPersonalFinance } from "./TextPersonalFinance";
 import { TextWelcome } from "./TextWelcome";
-import { useGlobalContext } from "../../hooks/globalContext";
+
 export function LoginPage() {
   return (
     <>
