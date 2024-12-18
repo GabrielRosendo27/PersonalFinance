@@ -14,6 +14,7 @@ const schema = z.object({
   rememberMe: z.boolean().optional(),
 });
 
+
 type FormData = z.infer<typeof schema>;
 
 export function Form() {

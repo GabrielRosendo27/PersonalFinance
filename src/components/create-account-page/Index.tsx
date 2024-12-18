@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { FormCreateAccount } from "./FormCreateAccount";
 
 export function CreateAccount() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ export function CreateAccount() {
       <button onClick={handleClick} className="bg-blue-400 rounded px-4 py-2 text-center hover:bg-blue-600 cursor-pointer">
         Voltar
       </button>
+      <FormCreateAccount/>
     </>
   );
 }
