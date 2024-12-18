@@ -1,4 +1,3 @@
-import React from "react";
 import { useGlobalContext } from "../../hooks/globalContext";
 import { InputEmail } from "./form-inputs/InputEmail";
 import { InputPassword } from "./form-inputs/InputPassword";

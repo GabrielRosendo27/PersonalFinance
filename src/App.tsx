@@ -1,7 +1,6 @@
-import React from "react";
 import { GlobalProvider } from "./hooks/globalContext";
 import { AppRoutes } from "./routes/Routes";
-export function App() {
+function App() {
   return (
     <>
       <GlobalProvider>
@@ -10,3 +9,5 @@ export function App() {
     </>
   );
 }
+
+export default App;
