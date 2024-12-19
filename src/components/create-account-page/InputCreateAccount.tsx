@@ -1,14 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
+import React from "react";
 interface InputCreateAccountProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  register?: any;
-  error?: string;
+  error?: string | undefined;
 }
-export function InputCreateAccount({ ...props }: InputCreateAccountProps) {
+
+export function InputCreateAccount() {
   return (
     <>
-      <label>usuario</label>
-      <input {...props} />
+      <label>Username</label>
+      <input />
     </>
   );
 }

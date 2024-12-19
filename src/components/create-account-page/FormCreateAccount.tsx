@@ -2,7 +2,6 @@ import { InputCreateAccount } from "./InputCreateAccount";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ButtonCreateAccount } from "../login-page/form-items/ButtonCreateAccount";
 
 const schema = z.object({
   user: z.string().min(3, "Usuário Inválido"),
@@ -26,8 +25,7 @@ export function FormCreateAccount() {
   }
   return (
     <form className="flex flex-col">
-      <InputCreateAccount className="border-2 border-black w-40" />
-      <ButtonCreateAccount />
+      <InputCreateAccount />
     </form>
   );
 }
