@@ -40,17 +40,47 @@ export function Form() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Input
+          label="email"
+          id="email"
+          error={errors.email?.message}
+          {...register("email")}
           styles={{
             container: "relative",
             input: "peer focus:outline-none border-b border-black w-full",
             span: "absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 ease-in-out peer-focus:w-full",
           }}
-        />
-        <InputEmail register={register} error={errors.email?.message} />
-        <InputPassword register={register} error={errors.password?.message} />
-        <InputCheckbox register={register} />
+        >
+          E-mail:
+        </Input>
+        <Input
+          label="password"
+          id="password"
+          error={errors.password?.message}
+          {...register("password")}
+          type="password"
+          styles={{
+            container: "relative",
+            input: "peer focus:outline-none border-b border-black w-full",
+            span: "absolute bottom-0 left-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 ease-in-out peer-focus:w-full",
+          }}
+        >
+          Password:
+        </Input>
+        <Input
+          styles={{
+            container: "cursor-pointer select-none relative flex flex-row-reverse items-center gap-1 justify-end",
+          }}
+          label="checkbox"
+          {...register("rememberMe")}
+          id="checkbox"
+          error={errors.rememberMe?.message}
+          type="checkbox"
+        >
+          Remember Password
+        </Input>
+        {/* <InputCheckbox register={register} /> */}
         <Button className="bg-green-400 rounded px-4 py-2 text-center hover:bg-green-600 cursor-pointer w-full">Log In</Button>
       </form>
 
